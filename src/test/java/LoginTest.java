@@ -23,7 +23,7 @@ public class LoginTest {
       driver.findElement(By.id("username")).sendKeys("tomsmith");
       driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
       driver.findElementByCssSelector("#login button").click();
-      assertFalse("ddddd",
+      assertTrue("ddddd",
                 driver.findElementByCssSelector(".subheader").isDisplayed());
 
     }
