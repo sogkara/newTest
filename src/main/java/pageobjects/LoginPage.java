@@ -1,10 +1,11 @@
 package pageobjects;
 
+import com.sun.xml.internal.rngom.parse.host.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+public class LoginPage extends Base {
     private WebDriver driver; //reuse anelu ahamr e enq grum
     private By usernameLocator=By.id("username");
     private By passwordLocator =By.id("password");
@@ -15,8 +16,11 @@ public class LoginPage {
 
     public LoginPage(WebDriver webdriver)
     {
-        this.driver=webdriver;
-        this.driver.get("http://the-internet.herokuapp.com/login");
+
+
+
+
+
     }
 
 
